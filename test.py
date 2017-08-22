@@ -13,4 +13,8 @@ df.reset_index(inplace=True)
 df['ymd'] = df['ymd'].apply(lambda x: x.year if x.month > 2 else x.year - 1)
 df.set_index(['ymd'], inplace=True)
 
+
+
+aaaaa
+
 print(df.groupby(lambda x: x).sum())
